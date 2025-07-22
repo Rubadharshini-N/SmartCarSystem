@@ -1,0 +1,275 @@
+<!--Employee login 1st page Vehicle Addition page-->
+
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>PROJECT</title>
+    </head>
+    <body>
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    margin-top: 2%;
+    text-decoration-line: none;
+}
+nav{
+   background-color: teal;
+   color:white;
+   padding: 15px;
+}
+li,h1,ul{
+    display: inline;
+}
+ul{ 
+    margin-left: 60%;
+}
+a,ul,li:hover{
+    color: white;
+    cursor: pointer;
+}
+ul,li,a{
+    color:salmon;
+}
+li:hover,ul:hover,a:hover{
+    color:darkblue;
+}
+
+img{
+    height: 220px;
+    width: 220px;
+}
+
+.box{
+    color: white;
+    background-color: teal;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+}
+.box:hover{
+    background-color: black;
+   
+}
+.products{
+    margin-top: 3%;
+    text-align: center;
+   
+}
+fieldset{
+    margin-left: 28%;
+    height: 500px;
+    width: 600px;
+    line-height: 2.8;
+    padding-left: 2%;
+    
+}
+.footer{
+    margin-top: 2%;
+    color: white;
+    background-color: teal;
+    text-align: center;
+    padding-top: 1%;
+    line-height: 1.8;
+}
+
+
+</style>
+      <script>
+        function validate(){
+                mk=document.forms["details"]["make"];
+                md=document.forms["details"]["model"];
+                pr=document.forms["details"]["price"];
+                img=document.forms["details"]["images"];
+            if(mk.value==""){
+                alert("Please choose the make field");
+                usn.focus()
+                return false
+            }
+            else if(md.value==""){
+                alert("Please select the model");
+                usn.focus()
+                return false
+            }
+            else if(pr.value==""){
+                alert("Please set the your price");
+                usn.focus()
+                return false
+            }
+            else if(img.value==""){
+                alert("Please upload the product images");
+                usn.focus()
+                return false
+            }
+            else{
+                alert("Registered Successfully");
+                
+            }
+             }
+            
+        </script>
+    
+        <div class=first>
+            <center> <h1 style="color: darkcyan;" >CARWALE</h1>  </center>
+             <h4 style="color:black; text-align: center;">Drive Your Dreams | The Ultimate Driving Experience</h4>
+         </div>
+         <div class="header">
+             <nav>             
+               <h1>Carwale</h1>
+               <ul>
+                <li><a href="home.html">Home |</a></li>
+                <li><a href="about.html">About Us |</a></li>
+                <li><a href="adminlogin.html">Admin |</a></li>
+                <li><a href="emplogin.html">Employee |</a></li>
+                <li><a href="userlogin.html">User</a></li>
+             </ul>
+            </nav>
+         </div>
+
+                <h2>Featured Cars</h2>
+                <br>
+               <p style="font-size: larger;">TRENDING |  
+                POPULAR| 
+                UPCOMING</p> 
+              
+        
+        <div class="products">
+            <div class="box">
+               <img src="c1.png">
+               <p>Mahindra XUV 3XO<br>
+                Rs. 7.49 Lakh
+                onwards<br>
+                Avg. Ex-Showroom price</p>
+            </div>
+            <div class="box">
+                <img src="c2.png">
+                <p>Maruti Fronx<br>
+                    Rs. 7.51 Lakh
+                    onwards<br>
+                    Avg. Ex-Showroom price</p>
+             </div>
+             <div class="box">
+                <img src="c3.png">
+                <p>Toyota Urban Cruiser Taisor<br>
+                    Rs. 7.74 Lakh
+                    onwards<br>
+                    Avg. Ex-Showroom price</p>
+             </div>
+             <div class="box">
+                <img src="c4.png">
+                <p>Mahindra XUV700<br>
+                    Rs. 13.99 Lakh
+                    onwards<br>
+                    Avg. Ex-Showroom price</p>
+             </div>
+             <div class="box">
+                <img src="c5.png">
+                <p>Tata Punch<br>
+                    Rs. 6.13 Lakh
+                    onwards<br>
+                    Avg. Ex-Showroom price</p>
+             </div>
+             <a href="empc1c.html">Show more</a>
+            
+        </div>
+        <br>
+<hr>
+<br>
+     <b>  <legend style="text-align: center;font-size: x-large;">Vehicle Details Form</legend> </b> 
+        
+        <form method="post" enctype="multipart/form-data" name="details" action="reg.html">
+            <fieldset style="background-color: blanchedalmond;"> 
+            <table cellpadding="20px" cellspacing="5px">
+                <tr>
+          <td><label for="make">Make:</label></td>
+           <td> <select id="make" name="make">
+            <option disabled selected>Choices</option>
+              <option value="toyota">Toyota</option>
+              <option value="honda">Honda</option>
+              <option value="ford">Ford</option>
+              <option value="chevrolet">Chevrolet</option>
+              <option value="bmw">BMW</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+              <option value="volkswagen">Volkswagen</option>
+              <option value="nissan">Nissan</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="text" name="other-make" placeholder="Specify Make">
+        </td>
+                </tr>
+                <tr>
+    <td>  <label for="model">Model:</label></td>
+    <td> <input type="text" name="model" placeholder="Enter model name" required>
+</td>
+</tr>
+
+<tr>
+    <td>
+  <label for="year">Year:</label> </td>
+ <td> <select id="year" name="year">
+    <option disabled selected>Select Year</option>
+    <option value="2024">2024</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <!-- More years -->
+    <option value="2005">2005</option>
+  </select>
+</td>
+</tr>
+<tr>
+ <td> <label for="price">Price(USD):</label></td>
+ <td> <input type="number" id="price" name="price" placeholder="Enter price in USD" required></td>
+</tr>
+<tr>
+    <td>
+  <label for="images">Images:</label></td>
+  <td><input type="file" id="images" name="images" accept="image/*" multiple required></td>
+</tr>
+<tr>
+    <td>
+  <label for="description">Description:</label></td>
+  <td> <textarea id="description" name="description" placeholder="Enter detailed description of the Vehicle" required></textarea></td></tr>
+<tr>
+<td>
+  <label>Features:</label></td>
+<td> <input type="checkbox" id="sunroof" name="features" value="sunroof"> Sunroof
+  <input type="checkbox" id="navigation" name="features" value="navigation"> Navigation System
+  <input type="checkbox" id="leather-seats" name="features" value="leather-seats"> Leather Seats
+  <input type="checkbox" id="backup-camera" name="features" value="backup-camera"> Backup Camera
+  <input type="checkbox" id="bluetooth" name="features" value="bluetooth"> Bluetooth
+  <input type="checkbox" id="heated-seats" name="features" value="heated-seats"> Heated Seats
+  <input type="checkbox" id="awd" name="features" value="awd"> All-Wheel Drive
+  <input type="checkbox" id="remote-start" name="features" value="remote-start"> Remote Start
+  <input type="checkbox" id="parking-sensors" name="features" value="parking-sensors"> Parking Sensors
+  <input type="checkbox" id="blind-spot" name="features" value="blind-spot"> Blind Spot Monitoring</td></tr>
+<tr>
+    <td></td>
+ <td><button type="submit">Submit</button></td></tr>
+</table>
+</fieldset>
+</form>
+<center><a style="color: orangered;font-size: x-large;"  href="empc2.html"> Next page </a></center>
+<div class="footer">
+    <p>Language : English</p>
+    <p>CONNECT WITH US </p>
+    <a href="">Facebook</a>
+    <a href="">Instagram</a>
+    <a href="">Youtube</a>
+    <a href="">LinkedIn </a>
+
+    <p>Carwale</p>
+    <p><a href="">Privacy Policy</a></p>
+</div>
+</body>
+</html>
+

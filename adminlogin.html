@@ -1,0 +1,153 @@
+<!--Admin login page-->
+
+
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>PROJECT</title>
+        
+    </head>
+    <body>
+
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    margin-top: 2%;
+    text-decoration-line: none;
+}
+nav{
+   background-color: teal;
+   color:white;
+   padding: 15px;
+}
+li,h1,ul{
+    display: inline;
+}
+ul{ 
+    margin-left: 60%;
+}
+a,ul,li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+input{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    
+}
+ul,li,a{
+    color:salmon;
+}
+li:hover,ul:hover,a:hover{
+    color:darkblue;
+}
+fieldset{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.admin{
+    margin-top: 3%;   
+}
+i{  
+    font-size: larger;
+}
+.footer{
+    margin-top: 2%;
+    color: white;
+    background-color: teal;
+    text-align: center;
+    padding-top: 1%;
+    line-height: 1.8;
+}
+</style>      
+        <script>
+          
+          function validate(){
+            usn=document.forms["Logins"]["Users"];
+            psn=document.forms["Logins"]["Pswd"];
+           }
+           // username="Admin"//
+           if(usn.value==""){
+            alert("Please fill the Username field..!");
+            usn.focus()
+            return false
+           }
+           else if(psn.value=="") {
+            alert("Please fill the Password field..!");
+            psn.focus()
+            return false
+           }
+           else if(usn.value=="Admin" && psn.value=="admin@123"){
+            alert("Login Successfully..!");
+            return true
+           }
+           else {
+            alert("Username or Password is not found..!");
+            return false
+           }
+
+        </script>
+        <div class=first>
+            <center>
+            <h1 style="color: darkcyan">CARWALE</h1>  
+            </center>
+            <h4 style="color:black; text-align: center;">Drive Your Dreams | The Ultimate Driving Experience</h4>
+          
+        </div>
+        <div class="header">
+          <nav>             
+            <h1>Carwale</h1>
+            <ul>
+                <li><a href="home.html">Home |</a></li>
+                <li><a href="about.html">About Us |</a></li>
+                <li><a href="adminlogin.html">Admin |</a></li>
+                <li><a href="emplogin.html">Employee |</a></li>
+                <li><a href="userlogin.html">User</a></li>
+             </ul>
+         </nav>
+      </div>
+     <h2 style="color: teal; text-align: center;margin-top: 5%;">ADMIN LOGIN</h2>
+     <div class="admin">
+
+   <center> <fieldset style="height: 180px;width: 320px;"> 
+    <form action="dashboard.html" name="Logins" onsubmit="return validate()">
+        
+        <table cellspacing="20px" cellpadding="5px">
+          <tr>
+            <br>
+            <td><label for="">Username</label></td> 
+            <td><input type="text" name="Users" placeholder="Enter your Username" required></td>
+          </tr>
+          
+          <tr>
+            <td><label for="">Password</label></td>  <td><input type="password" name="Pswd" placeholder="Enter your Password" required></td>
+          </tr>
+          <tr>
+           <td></td> <td><input type="submit" value="Login" name="submit"></td>
+          </tr>
+         </table>
+        
+        </form>
+      </fieldset>
+    </center>
+  </div>
+  
+<div class="footer">
+    <p>Language : English</p>
+    <p>CONNECT WITH US </p>
+    <a href="">Facebook</a>
+    <a href="">Instagram</a>
+    <a href="">Youtube</a>
+    <a href="">LinkedIn </a>
+
+    <p>Carwale</p>
+    <p><a href="">Privacy Policy</a></p>
+</div>
+
+    </body>
+</html>

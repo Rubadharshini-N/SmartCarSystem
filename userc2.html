@@ -1,0 +1,314 @@
+<!--User login 2nd page  Sell your  cars-->
+
+
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>PROJECT</title>
+    </head>
+    <body>
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    margin-top: 2%;
+    text-decoration: none;
+}
+nav{
+   background-color: teal;
+   color: white;
+   padding: 10px;
+  
+}
+li,h1,ul{
+    display: inline;
+}
+ul{ 
+    margin-left: 70%;
+}
+a,ul,li:hover{
+    color: white;
+    cursor: pointer;
+}
+l,li,a{
+    color:salmon;
+}
+li:hover,ul:hover,a:hover{
+    color:darkblue;
+}
+
+.searchbar{
+    text-align: center;
+    background-image: url("back1.png");
+    background-repeat:no-repeat ;
+    background-size: 1400px;
+    height: 400px;
+
+}
+.select{
+    text-align: center;
+    font-size: larger;
+    width: 600px;
+    height: 50px;
+}
+button{
+    background-color: darkorange;
+    border-style: solid;
+    width:100px;
+    height: 51px;
+}
+
+
+fieldset{
+    margin-left: 26%;
+    height: 680px;
+    width: 600px;
+    line-height: 2.8;
+    padding-left: 2%;
+    
+}
+.one{ 
+    height: 54px;
+    width: 600px;
+    margin-top: 3%;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+}
+
+.two{ 
+    margin-top: 2%;
+    background-color:white;
+    text-align: center;
+    height: 40px;
+    width: 600px;
+    border-style: solid;
+    padding-top: 1%;
+    border-width: 2px;
+}
+.footer{
+    margin-top: 2%;
+    color: white;
+    background-color: teal;
+    text-align: center;
+    padding-top: 1%;
+    line-height: 1.8;
+}
+
+</style>
+        <script>
+            function validate(){
+                    mk=document.forms["details"]["make"];
+                    md=document.forms["details"]["model"];
+                    pr=document.forms["details"]["price"];
+                    img=document.forms["details"]["images"];
+                if(mk.value==""){
+                    alert("Please choose the make field");
+                    usn.focus()
+                    return false
+                }
+                else if(md.value==""){
+                    alert("Please select the model");
+                    usn.focus()
+                    return false
+                }
+                else if(pr.value==""){
+                    alert("Please set the your price");
+                    usn.focus()
+                    return false
+                }
+                else if(img.value==""){
+                    alert("Please upload the product images");
+                    usn.focus()
+                    return false
+                }
+                else{
+                    alert("Vehicle details added Successfully");
+                    
+                }
+                 }
+                
+            </script>
+
+        <div class=first>
+            <center>
+            <h1 style="color: darkcyan">CARWALE</h1>  
+            </center>
+            <h4 style="color:black; text-align: center;">Drive Your Dreams | The Ultimate Driving Experience</h4>
+          
+        </div>
+        <div class="header">
+           <nav>             
+             <h1>Carwale</h1>
+                <ul>
+                    <li><a href="home.html">Home |</a></li>
+                    <li><a href="about.html">About Us |</a></li>
+                    <li><a href="adminlogin.html">Admin |</a></li>
+                    <li><a href="emplogin.html">Employee |</a></li>
+                    <li><a href="userlogin.html">User</a></li>
+                 </ul>
+          </nav>
+       </div>
+
+       <div class="searchbar" >
+        <br><br><br><br>
+        <h1 style="color:white">FIND THE RIGHT CAR</h1>
+        <BR>
+            <p><a style="text-decoration: none;font-size: larger;" href="userc1.html">Find New Cars | </a>  <a style="text-decoration: none;font-size: larger;"  href="userc2.html">Sell Your Cars</a></h3></p>
+            <br>
+        <input class="select" type="search" name="Searchdata" placeholder="Type to select car name,e.g.Renault Triber ">
+        <button type="submit">Search</button>
+        <br>
+    </div>
+       <center>
+       <p style="text-align: center;font-size: x-large;">What is the location of the car you are selling? </p>
+       <input class="one" type="search" name="Search" placeholder="Current location, Nehru Nagar, Coimbatore ">
+       <br>
+       <div class="two">
+        <feieldset >
+        <label>Somewhere else</label>
+        <select name="location"id="location" >
+        <option disabled selected>Choose State</option>
+            <optgroup label="Andra Pradesh"></optgroup>
+            <optgroup label="Arunachal Pradesh"></optgroup>
+            <optgroup label="Assam"></optgroup>
+            <optgroup label="Bihar"></optgroup>
+            <optgroup label="Chhattisgarh"></optgroup>
+            <optgroup label="Goa"></optgroup>
+            <optgroup label="Gujarat"></optgroup>
+           <optgroup label="Haryana"></optgroup>
+            <optgroup label="Himachal Pradesh"></optgroup>
+                <optgroup label="Jharkhand"></optgroup>
+            <optgroup label="Karnataka"></optgroup>
+             <optgroup label="Kerala"></optgroup>
+          <optgroup label="Madhya Pradesh"></optgroup>
+            <optgroup label="Maharashtra"></optgroup>
+         <optgroup label="Manipur"></optgroup>
+      <optgroup label="Meghalaya"></optgroup>
+      <optgroup label="Mizoram"></optgroup>
+            <optgroup label="Nagaland"></optgroup>
+     <optgroup label="Odisha"></optgroup>
+          <optgroup label="Punjab"></optgroup>
+              <optgroup label="Rajasthan"></optgroup>
+          <optgroup label="Sikkim"></optgroup>
+            <optgroup label="Tamil Nadu">
+                 <option value="Coimbatore">Coimbatore</option>
+                    <option value="ukkadam">UkKadam</option>
+                    <option value="Gandhipuram">Ganthipuram</option>
+                </optgroup>
+                <option value="madurai">Madurai</option>
+                    <option value="Aarappalayam">Aarappalayam</option>
+                    <option value="mattuthavani">Mattuthavani</option>
+            </optgroup>
+         <optgroup label="Telangana"></optgroup>
+            <optgroup label="Tripura"></optgroup>
+                <optgroup label="Uttarakhand"></optgroup>
+                    <optgroup label="Uttar Pradesh"></optgroup>
+                        <optgroup label="West Bengal"></optgroup>
+        </select>
+    </feieldset>
+
+        </div>
+    </center> 
+
+<br><br><br>
+       <legend style="text-align: center;font-size: x-large;">Vehicle Details Form</legend>  
+        
+       <form  method="post" enctype="multipart/form-data" name="details" action="reg.html">
+           <fieldset style="background-color: blanchedalmond;"> 
+           <table cellpadding="20px" cellspacing="5px">
+
+            <tr>
+                <td>Make:</td> 
+                <td><input type="checkbox" name="make"><label>Toyota</label>
+                <input type="checkbox" name="make"><label>Honda</label>
+                <input type="checkbox" name="make"><label>Ford</label>
+                <input type="checkbox" name="make"><label>Chevrolet</label>
+                <input type="checkbox" name="make"><label>BMW</label>
+                <input type="checkbox" name="make"><label>Mercedes</label>
+                <input type="checkbox" name="make"><label>Audi</label>
+                <input type="checkbox" name="make"><label>Volkswagen</label>
+                <input type="checkbox" name="make"><label>Nissan</label>
+                <input type="checkbox" name="make"><label>Hyundai</label> 
+                <input type="text" name="make" placeholder="Other">
+       </td>
+               </tr>
+               <tr>
+   <td>  <label for="model">Model:</label></td>
+   <td> <input type="text" name="model" placeholder="Enter model name" required>
+</td>
+</tr>
+
+<tr>
+<td>Year:</td> 
+<td><input type="checkbox" name="year"><label>2024</label>
+<input type="checkbox" name="year"><label>2023</label>
+<input type="checkbox" name="year"><label>2022</label> 
+<input type="checkbox" name="year"><label>2022</label> 
+<input type="checkbox" name="year"><label>2021</label> 
+<input type="checkbox" name="year"><label>2020</label> 
+<input type="checkbox" name="year"><label>2005</label> 
+</tr>
+
+<tr>
+<td> <label for="price">Price(USD):</label></td>
+<td> <input type="number" id="price" name="price" placeholder="Enter price in USD" required></td>
+</tr>
+
+<tr>
+    <td> <label for="owners">Owners:</label></td>
+    <td> <input type="number" id="owners" name="owners" placeholder="Enter the no.of owners" required></td>
+</tr>
+ <tr>
+    <td>
+      <label for="proof">Proof:</label></td>
+      <td><input type="file" id="proof" name="proof" accept="file/*" multiple required ></td>
+</tr>
+<tr>
+   <td>
+ <label for="images">Images:</label></td>
+ <td><input type="file" id="images" name="images" accept="image/*" multiple required placeholder="Upload car images"></td>
+</tr>
+<tr>
+   <td>
+ <label for="description">Description:</label></td>
+ <td> <textarea id="description" name="description" placeholder="Enter detailed description of the Vehicle" required></textarea></td></tr>
+<tr>
+<td>
+ <label>Features:</label></td>
+<td> <input type="checkbox" id="sunroof" name="features" value="sunroof"> Sunroof
+ <input type="checkbox" id="navigation" name="features" value="navigation"> Navigation System
+ <input type="checkbox" id="leather-seats" name="features" value="leather-seats"> Leather Seats
+ <input type="checkbox" id="backup-camera" name="features" value="backup-camera"> Backup Camera
+ <input type="checkbox" id="bluetooth" name="features" value="bluetooth"> Bluetooth
+ <input type="checkbox" id="heated-seats" name="features" value="heated-seats"> Heated Seats
+ <input type="checkbox" id="awd" name="features" value="awd"> All-Wheel Drive
+ <input type="checkbox" id="remote-start" name="features" value="remote-start"> Remote Start
+ <input type="checkbox" id="parking-sensors" name="features" value="parking-sensors"> Parking Sensors
+ <input type="checkbox" id="blind-spot" name="features" value="blind-spot"> Blind Spot Monitoring</td></tr>
+<tr>
+   <td></td>
+<td><input style="background-color: blue;color: aliceblue;" type="submit" value="Submit" name="submit"></td></tr>
+</table>
+</fieldset>
+</form>
+
+<div class="footer">
+        <p>Language : English</p>
+        <p>CONNECT WITH US </p>
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+        <a href="">Youtube</a>
+        <a href="">LinkedIn </a>
+
+        <p>Carwale</p>
+        <p><a href="">Privacy Policy</a></p>
+    </div>
+    
+
+   
+</body>
+</html>
